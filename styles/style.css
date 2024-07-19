@@ -17,13 +17,9 @@ body {
   justify-content: space-between;
 }
 
-/**/
-
 #header {
   width: 9%;
 }
-
-/**/
 
 #container__input {
   width: 50%;
@@ -84,8 +80,6 @@ body {
   color: #0A3871;
 }
 
-/**/
-
 #container__output {
   background-color: #FFFFFF;
   width: 29%;
@@ -94,7 +88,7 @@ body {
   justify-content: center;
 }
 
-/**/
+/* Sem resultado*/
 
 #container__output__empty {
   height: 100%;
@@ -116,18 +110,18 @@ body {
 #container__output__empyt__message__strong {
   color: #343A40;
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 24px;
 }
 
 #container__output__empyt__message__text {
   color: #495057;
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
 }
 
-/**/
+/*Com resultado*/
 
 #container__output__control {
   width: 84%;
