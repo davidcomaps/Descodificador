@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F3F5FC;
+}
+
+#container {
+  height: 100vh;
+  padding: 2.5%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+/**/
+
+#header {
+  width: 9%;
+}
+
+/**/
+
+#container__input {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8% 0 2% 0;
+  gap: 8px;
+}
+
+#container__input__text {
+  height: 100%;
+  background-color: #F3F5FC;
+  color: #0A3871;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+#container__input__text::placeholder {
+  color: #0A3871;
+}
+
+#container__input__control {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#container__input__control__advice {
+  display: flex;
+  gap: 5px;
+}
+
+#container__input__control__advice__text {
+  color: #495057;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+
+#container__input__control__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#container__input__control__button__encrypt {
+  width: 48.2%;
+  background-color: #0A3871;
+  color: #F3F5FC;
+}
+
+#container__input__control__button__decrypt {
+  width: 48.2%;
+  background-color: #D8DFE8;
+  color: #0A3871;
+}
+
+/**/
+
+#container__output {
+  background-color: #FFFFFF;
+  width: 29%;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+/**/
+
+#container__output__empty {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+#container__output__empty__message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+}
+
+#container__output__empyt__message__strong {
+  color: #343A40;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#container__output__empyt__message__text {
+  color: #495057;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/**/
+
+#container__output__control {
+  width: 84%;
+  margin: 6.8% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+#container__output__control__result {
+  color: #495057;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#container__output__control__button_copy {
+  background-color: #FFFFFF;
+  color: #0A3871;
+}
+
+.hidden {
+  display: none;
+}
+
+
+button {
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid #0A3871;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}

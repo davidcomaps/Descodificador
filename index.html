@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <main id="container">
+        <header id="header">
+            <img src="./svg/logo.svg" alt="a letra a em forma de logotipo."/>
+        </header>
+        <section id="container__input">
+            <textarea id="container__input__text" name="" placeholder="Digite seu texto"></textarea>
+            <div id="container__input__control">
+                <div id="container__input__control__advice">
+                    <img src="./svg/exclamation-circle.svg" alt="exclamação dentro de circulo cinza para chamar atenção."/>
+                    <p id="container__input__control__advice__text">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div id="container__input__control__buttons">
+                    <button onclick="criptografar()" id="container__input__control__button__encrypt">Criptografar</button>
+                    <button onclick="descriptografar()" id="container__input__control__button__decrypt">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section id="container__output">
+            <div id="container__output__control">
+                <p id="container__output__control__result" class="hidden"></p>
+                <div id="container__output__empty" class="">
+                    <img src="./svg/image.svg" id="container__output__empty__image" class="" alt="imagem de uma pessoa de joelhos com uma lupa com um diamante grande na frente."/>
+                    <div id="container__output__empty__message" class="">
+                        <strong id="container__output__empyt__message__strong" class="">Nenhuma mensagem encontrada</strong>
+                        <p id="container__output__empyt__message__text" class="">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                </div>
+                <button onclick="copiar()" id="container__output__control__button_copy" class="hidden">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="./app.js" defer></script>
+</body>
+</html>
