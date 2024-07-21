@@ -15,7 +15,7 @@ function criptografar() {
         .replace(/u/g, "ufat");
 
     mostrarResultado(textoCriptografado);
-    document.querySelector('#container__input__text').value = '';
+    //document.querySelector('#container__input__text').value = '';
 }
 
 function descriptografar() {
@@ -35,7 +35,7 @@ function descriptografar() {
         .replace(/ufat/g, "u");
 
     mostrarResultado(textoOriginal);
-    document.querySelector('#container__input__text').value = '';
+    //document.querySelector('#container__input__text').value = '';
 }
 
 function mostrarResultado(texto) {
@@ -58,8 +58,7 @@ function mostrarResultado(texto) {
 function copiar() {
     const result = document.querySelector('#container__output__control__result');
     navigator.clipboard.writeText(result.textContent).then(() => {
-        /* alert("Texto copiado para a área de transferência");
- */
+    
         document.querySelector('#container__input__text').value = '';
         result.textContent = '';
         result.classList.add('hidden');
