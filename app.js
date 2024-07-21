@@ -2,7 +2,7 @@ function criptografar() {
     const textarea = document.querySelector('#container__input__text');
     let texto = textarea.value;
 
-    if (!texto.match(/^[a-z\s]*$/)) {
+    if (!texto.match(/^[a-z\s]*$/) || texto === "") {
         alert("Apenas letras minúsculas e sem acento são permitidas.");
         return;
     }
@@ -22,7 +22,7 @@ function descriptografar() {
     const textarea = document.querySelector('#container__input__text');
     let textoCriptografado = textarea.value;
 
-    if (!textoCriptografado.match(/^[a-z\s]*$/)) {
+    if (!textoCriptografado.match(/^[a-z\s]*$/) || textoCriptografado === "") {
         alert("Apenas letras minúsculas e sem acento são permitidas.");
         return;
     }
