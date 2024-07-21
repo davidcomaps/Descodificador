@@ -47,7 +47,7 @@ function mostrarResultado(texto) {
 
     const outputControl = document.querySelector('#container__output__control');
     const result = document.querySelector('#container__output__control__result');
-    const copyButton = document.querySelector('#container__output__control__button_copy');
+    const copyButton = document.querySelector('#container__output__control__button__copy');
 
     result.textContent = texto;
     result.classList.remove('hidden');
@@ -63,7 +63,7 @@ function copiar() {
         document.querySelector('#container__input__text').value = '';
         result.textContent = '';
         result.classList.add('hidden');
-        document.querySelector('#container__output__control__button_copy').classList.add('hidden');
+        document.querySelector('#container__output__control__button__copy').classList.add('hidden');
 
         document.querySelector('#container__output__empty').classList.remove('hidden');
         document.querySelector('#container__output__empty__image').classList.remove('hidden');
