@@ -15,7 +15,6 @@ function criptografar() {
         .replace(/u/g, "ufat");
 
     mostrarResultado(textoCriptografado);
-    //document.querySelector('#container__input__text').value = '';
 }
 
 function descriptografar() {
@@ -35,7 +34,6 @@ function descriptografar() {
         .replace(/ufat/g, "u");
 
     mostrarResultado(textoOriginal);
-    //document.querySelector('#container__input__text').value = '';
 }
 
 function mostrarResultado(texto) {
@@ -73,3 +71,5 @@ function copiar() {
         alert("Falha ao copiar o texto");
     });
 }
+
+console.log("Desenvolvido por David Alexandre Campos, seguindo as métricas via figma da alura.")
