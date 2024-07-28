@@ -35,7 +35,7 @@ body {
   background-color: #F3F5FC;
   color: #0A3871;
   font-family: 'Inter', sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 500;
   border: none;
   outline: none;
@@ -60,7 +60,7 @@ body {
 #container__input__control__advice__text {
   color: #495057;
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 #container__input__control__buttons {
@@ -99,6 +99,11 @@ body {
   gap: 24px;
 }
 
+.container__output__empty__image {
+  width: 84%;
+  height: 32%;
+}
+
 #container__output__empty__message {
   display: flex;
   flex-direction: column;
@@ -111,14 +116,14 @@ body {
   color: #343A40;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 #container__output__empyt__message__text {
   color: #495057;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 /*Com resultado*/
@@ -154,5 +159,5 @@ button {
   border: 1px solid #0A3871;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
 }
